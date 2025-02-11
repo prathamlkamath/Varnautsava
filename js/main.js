@@ -130,7 +130,10 @@ jQuery(document).ready(function( $ ) {
     dots: true,
     loop: true,
     center:true,
-    responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
+    // nav:true,
+    margin:20,
+    // stagePadding:10,
+    responsive: { 0: { items: 1 }, 768: { items: 1}, 992: { items: 2 }, 1200: {items: 2.45}
     }
   });
 
