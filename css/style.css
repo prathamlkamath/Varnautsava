@@ -1020,7 +1020,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #gallery {
-  padding: 60px;
+  padding: 10px;
   overflow: hidden;
 }
 
@@ -1042,7 +1042,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #gallery .owl-dot {
   display: inline-block;
-  margin: 0 5px;
+  margin: 30px 5px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1059,11 +1059,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #gallery .gallery-carousel .center {
   border: 6px solid #f82249;
-  margin:-10px;
-  box-sizing: content-box;
+  margin:10;
+  box-sizing: border-box;
   padding: 4px;
   background: #fff;
-  z-index:1 ;
+  z-index:10 ;
 
 }
 
