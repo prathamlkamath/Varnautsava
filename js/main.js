@@ -133,7 +133,7 @@ jQuery(document).ready(function( $ ) {
     // nav:true,
     margin:20,
     // stagePadding:10,
-    responsive: { 0: { items: 1 }, 768: { items: 1}, 992: { items: 2 }, 1200: {items: 2.45}
+    responsive: { 0: { items: 1 }, 768: { items: 2}, 992: { items: 2 }, 1200: {items: 2.8}
     }
   });
 
