@@ -844,6 +844,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: background-color ease-in-out 0.3s;
 }
 
+#schedule .schedule-name {
+  text-decoration: none;
+  color:#334997
+
+}
+
+#schedule .schedule-name:hover{
+  color: #d5205d;
+  text-decoration: underline;
+}
+
+
+
 #schedule .schedule-item:hover {
   background-color: #fff;
 }
@@ -854,8 +867,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item .speaker {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
   border-radius: 50%;
   float: left;
@@ -870,8 +883,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all ease-in-out 0.3s;
 }
 
+#schedule .schedule-item .event-image {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 5%;
+  float: left;
+  margin: 0 10px 10px 0;
+  object-fit: cover
+}
+
+#schedule .schedule-item .event-image img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
 #schedule .schedule-item h4 {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 5px;
 }
