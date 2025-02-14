@@ -136,6 +136,7 @@ jQuery(document).ready(function( $ ) {
     responsive: { 0: { items: 1 }, 768: { items: 2}, 992: { items: 2 }, 1200: {items: 2.8}
     }
   });
+  
 
   // Buy tickets select the ticket type on click
   $('#buy-ticket-modal').on('show.bs.modal', function (event) {

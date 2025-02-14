@@ -920,6 +920,203 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+
+/*-----detail.html page---------------*/
+
+#schedule-detail {
+  padding: 60px 0 60px 0;
+  background: url(../img/Events/bg2.jpg) no-repeat center center/cover rgba(18, 18, 18, 0.4);
+  background-attachment: fixed; /* Keeps the background steady while scrolling */
+
+}
+#schedule-detail .section-header h2{
+  color: whitesmoke;
+}
+
+
+#schedule-detail .head h2{
+  color: white;
+}
+
+
+#schedule-detail .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule-detail .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule-detail .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+#schedule-detail .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+#schedule-detail .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+#schedule-detail .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#schedule-detail .schedule-item {
+  background-color:#050505e9;
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color:white;
+  box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.2);
+  border: 2px solid rgba(255, 215, 0, 0.5);
+  opacity: 0;   /*Initially invisible */
+  transform: translateY(-80px) scale(0.8);
+  animation: fade-in 1s ease-out 1s forwards;
+  overflow: hidden;
+
+}
+
+/* Define animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0.4;
+    transform: translateX(-50px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+
+#schedule-detail .schedule-item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0px; 
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, gold, transparent);
+  animation: sparkle 1.5s linear 1s infinite ;
+  overflow: hidden;
+}
+
+@keyframes sparkle {
+  0% {
+    top: -2%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+ 
+
+#schedule-detail .schedule-name {
+  text-decoration: none;
+  color: white;
+
+}
+
+#schedule-detail .schedule-name:hover{
+  color: #d5205d;
+  text-decoration: underline;
+}
+
+
+#schedule-detail .schedule-item:hover {
+  background-color: #1e1d1ddf;
+}
+
+#schedule-detail .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule-detail .schedule-item .speaker {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#schedule-detail .schedule-item .speaker img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  /* transition: all ease-in-out 0.1s; */
+}
+
+#schedule-detail .schedule-item .event-image {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 5%;
+  float: left;
+  margin: 0 10px 10px 0;
+  object-fit: cover
+}
+
+#schedule-detail .schedule-item .event-image img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  /* transition: all ease-in-out 0.3s; */
+}
+
+#schedule-detail .schedule-item h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: white;
+
+}
+
+#schedule-detail .schedule-item h5 {
+  font-size: 25px;
+  font-weight: 200;
+  margin-bottom: 5px;
+  color: white;
+
+}
+
+#schedule-detail .schedule-item h4 span {
+  font-style: italic;
+  /* color: #19328e; */
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#schedule-detail .schedule-item p {
+  font-style: italic;
+  /* color: #152b79; */
+  color: white;
+  margin-bottom: 0;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Venue Section
 --------------------------------------------------------------*/
