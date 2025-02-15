@@ -1027,6 +1027,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
  
 
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    visibility: hidden; /* Hides text but keeps space */
+    display: none;
+  }
+}
+/* not sure about this css  */
+#schedule-detail .schedule-item .small-view p {
+  margin: 0;  /* Removes default spacing */
+  display: inline; /* Ensures the text stays inline */
+
+  }
+
+  #schedule-detail .schedule-item .small-view span{
+    /* display: flex; */
+    align-items: center;
+    /* gap: 10px; */
+    
+  }
+  
+  #schedule-detail .schedule-item .small-view p {
+    margin: 0;
+    display: flex;
+    /* gap: 5px; */
+  }
+  /* not sure about this css  */
+
 #schedule-detail .schedule-name {
   text-decoration: none;
   color: white;
