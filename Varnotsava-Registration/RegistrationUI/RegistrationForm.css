@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(reg-bg3.avif) no-repeat center center/cover ;
+  background: url(bg2.jpg) no-repeat center center/cover ;
   background-attachment: fixed;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -28,11 +28,11 @@ form {
   display: none;
   flex-direction: column;
   gap: 1.5rem;
-  background-color: #161d5800;
+  background-color: #000000d4;
   border-radius: 1rem;
   padding: 2rem;
   width: 31.25rem; /* 500px approx */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px rgba(215, 207, 207, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -121,7 +121,7 @@ form {
 
 .event-selection {
   width: 70vw;
-  background-color: #2d425853;
+  background-color: #2d42581c;
   display: none;
   flex-direction: column;
   gap: 1rem;
@@ -287,7 +287,7 @@ form {
   transition: transform 0.3s ease;
   /* background-color: #16344d; */
     /* background-color: #0b273d; */
-    background-color: #09253a;
+    background-color: #041021ea;
   border: 2px solid #9d9505;
 }
 
