@@ -5,6 +5,8 @@
 }
 
 body {
+  background: url(reg-bg3.avif) no-repeat center center/cover ;
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   display: flex;
@@ -26,7 +28,7 @@ form {
   display: none;
   flex-direction: column;
   gap: 1.5rem;
-  background-color: #ffffff;
+  background-color: #161d5800;
   border-radius: 1rem;
   padding: 2rem;
   width: 31.25rem; /* 500px approx */
@@ -42,7 +44,7 @@ form {
 .form-card > h3 {
   text-align: center;
   font-size: 1.5rem;
-  color: #444;
+  color: #a5e0eb;
   margin-bottom: 1rem;
   word-wrap: break-word;
 }
@@ -56,12 +58,12 @@ form {
 
 .form-group > label {
   font-weight: 600;
-  color: #555;
+  color: #c8deeb;
   font-size: 0.9rem;
 }
 
 .form-group > input {
-  border: 1px solid #ccc;
+  border: 1px solid #87d7e7;
   border-radius: 0.5rem;
   font-size: 0.9rem;
   padding: 0.75rem;
@@ -115,8 +117,11 @@ form {
 }
 
 /*css for event selection */
+
+
 .event-selection {
-  width: 80vw;
+  width: 70vw;
+  background-color: #2d425853;
   display: none;
   flex-direction: column;
   gap: 1rem;
@@ -128,13 +133,41 @@ form {
 .event-selection > h3 {
   align-self: flex-start;
   margin: 2rem;
+  color: #f5f5f5;
+  font-size:larger;
+  padding: 30px;
 }
+.event-selection > h2 {
+  align-self: flex-start;
+  margin: 2rem;
+  color: #f5f5f5;
+
+}
+
 
 .event-selection > .header {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 30px;
+  color: #c8deeb;
+  /* background-color: #0a2b4ab6; */
+}
+
+.event-selection > .header p{
+  /* text-align: center; */
+  /* padding: 50px; */
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.event-selection .header h1{
+  font-size: 40px;
+  color: #a0f3de;
+
 }
 
 .technical,
@@ -143,6 +176,13 @@ form {
   flex-direction: column;
   gap: 2rem;
   margin-top: 1rem;
+  padding: 10px;
+  color: #f5f5f5;
+}
+
+.technical h3,
+.cultural h3{
+  font-size: 30px;
 }
 
 .technical.active,
@@ -170,6 +210,36 @@ form {
   .cultural-events {
     grid-template-columns: 1fr 1fr;
   }
+
+  .event-selection > .header {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .event-selection .header h1{
+    font-size: 40px;
+    align-self: flex-start;
+    text-decoration:double
+
+  }
+
+  .event-selection > .header p{
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .buttons .previous , .proceed{
+    border: none;
+    color: rgb(20, 20, 20);
+    padding: 0.8rem 0.3rem;
+  }
+  
+
 }
 
 @media (max-width: 480px) {
@@ -177,15 +247,45 @@ form {
   .cultural-events {
     grid-template-columns: 1fr;
   }
+
+  .event-selection > .header {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .event-selection .header h1{
+    font-size: 40px;
+    align-self: flex-start;
+    text-decoration:double
+
+  }
+
+  .event-selection > .header p{
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .buttons .previous , .proceed{
+    border: none;
+    color: rgb(20, 20, 20);
+    padding: 0.8rem 0.3rem;
+  }
 }
 /* ...existing code... */
 
 .event-card {
   height: 20rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 4px 10px rgba(121, 121, 109, 0.15);
   overflow: hidden;
   transition: transform 0.3s ease;
+  background-color: #16344d;
+  border: 2px solid #9d9505;
 }
 
 .event-card:hover {
@@ -208,7 +308,7 @@ form {
 
 .date-time {
   font-size: 0.85em;
-  color: #555;
+  color: #f8f5f5;
   display: flex;
   flex-direction: column;
   gap: 0.5 rem;
@@ -221,10 +321,11 @@ form {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  color: #f5f5f5;
 }
 
 .details > .description {
-  color: #555;
+  color: #f7f3f3;
   font-size: 0.9em;
 }
 
@@ -237,7 +338,7 @@ form {
 }
 
 .event-card.checked {
-  border: 0.25rem solid #007bff;
+  border: 0.30rem solid #d8dbde;
 }
 
 .material-symbols-outlined {
@@ -262,12 +363,13 @@ form {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 
 button {
-  background-color: #27296d;
+  background-color: #dba009;
   border: none;
-  color: white;
+  color: rgb(20, 20, 20);
   padding: 0.8rem 1.2rem;
   text-align: center;
   text-decoration: none;
