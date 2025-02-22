@@ -149,3 +149,15 @@ jQuery(document).ready(function( $ ) {
 // custom code
 
 });
+// Splash Screen Handler
+window.addEventListener('load', function() {
+  const splashScreen = document.getElementById('splash-screen');
+  
+  // Hide splash screen after 1.5 seconds
+  setTimeout(function() {
+    splashScreen.style.opacity = '0';
+    setTimeout(function() {
+      splashScreen.style.display = 'none';
+    }, 500);
+  }, 1500);
+});
