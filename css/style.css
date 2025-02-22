@@ -851,6 +851,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     visibility: hidden; /* Hides text but keeps space */
     display: none;
   }
+
+  #schedule-detail .schedule-item .speaker a{
+    /* height: 100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-left: 50%; */
+    /* transition: all ease-in-out 0.1s; */
+  }
 }
 /* not sure about this css  */
 #schedule-detail .schedule-item .small-view p {
@@ -908,6 +916,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   margin-left: 50%;
+  /* transition: all ease-in-out 0.1s; */
+}
+
+
+#schedule-detail .schedule-item .speaker a{
+  /* height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%; */
   /* transition: all ease-in-out 0.1s; */
 }
 

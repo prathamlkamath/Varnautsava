@@ -5,10 +5,11 @@
 }
 
 body {
-  /* background: url(ba.jpg) no-repeat center center/cover ; */
+  /* background: url(bg2.jpg) no-repeat center center/cover ; */
+  background-color: rgb(41, 40, 40);
   background-attachment: fixed;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +29,7 @@ form {
   display: none;
   flex-direction: column;
   gap: 1.5rem;
-  /* background-color: #000000d4; */
+  background-color: #3d3b3bd4;
   border-radius: 1rem;
   padding: 2rem;
   width: 31.25rem; /* 500px approx */
@@ -63,15 +64,26 @@ form {
 }
 
 .form-group > input {
-  border: 1px solid #000000;
+  border: 1px solid #dce6e8;
   border-radius: 0.5rem;
   font-size: 0.9rem;
   padding: 0.75rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
+  background-color: #72717142;
+  color: #ecf1f4;
+}
+
+.form-group > input:valid {
+  background-color: #72717142;
+  color: #ecf1f4;
+}
+.form-group > input::placeholder {
+  color: #f8fafb8a;
 }
 
 .form-group > input:focus {
+  background-color: #72717142;
   border-color: #007bff;
   outline: none;
   box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
@@ -151,19 +163,18 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-left: 20px;
+  margin-left: 12px;
   margin-top: 20px;
   padding: 30px;
   color: #ffffff;
   /* background-color: #0a2b4ab6; */
 }
 
-.event-selection > .header p{
-  /* text-align: center; */
-  /* padding: 50px; */
+/* .event-selection > .header p{
+ 
   margin-top: 30px;
   font-size: 25px;
-}
+} */
 
 .event-selection .header h1{
   font-size: 40px;
@@ -261,7 +272,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-left: 10px;
+    /* margin-left: 5px; */
     margin-top: 10px;
     padding: 10px;
   }
@@ -378,7 +389,9 @@ form {
 }
 
 button {
-  background-color: #dba009;
+  /* background-color: #dba009; */
+  color: #c8deeb;
+  background-color: #f64848;
   border: none;
   color: rgb(20, 20, 20);
   padding: 0.8rem 1.2rem;
