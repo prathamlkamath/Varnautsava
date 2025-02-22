@@ -1,18 +1,8 @@
-/*
-  Theme Name: TheEvent
-  Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 
 body {
   background: #fff;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 a {
@@ -54,54 +44,6 @@ h6 {
   visibility: hidden;
 }
 
-/* Prelaoder */
-
-#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
-}
-
-/* Back to top button */
-
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #f82249;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 50px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s ease-in-out;
-}
-
-.back-to-top i {
-  font-size: 24px;
-  padding-top: 6px;
-}
-
-.back-to-top:focus {
-  background: #e0072f;
-  color: #fff;
-  outline: none;
-}
-
-.back-to-top:hover {
-  background: #e0072f;
-  color: #fff;
-}
-
-/* Sections Header
---------------------------------*/
-
 .section-header {
   margin-bottom: 60px;
   position: relative;
@@ -140,9 +82,6 @@ h6 {
   background-color: #f6f7fd;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 
 #header {
   height: 90px;
@@ -189,11 +128,6 @@ h6 {
   max-height: 40px;
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-
-/* Nav Menu Essentials */
 
 .nav-menu,
 .nav-menu * {
@@ -233,8 +167,6 @@ h6 {
   min-width: 180px;
 }
 
-/* Nav Menu Arrows */
-
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
 }
@@ -252,14 +184,10 @@ h6 {
   content: "\f105";
 }
 
-/* Nav Meu Container */
-
 #nav-menu-container {
   float: right;
   margin: 0;
 }
-
-/* Nav Meu Styling */
 
 .nav-menu a {
   padding: 8px;
@@ -375,8 +303,6 @@ h6 {
   color: #fff;
 }
 
-/* Mobile Nav Styling */
-
 #mobile-nav {
   position: fixed;
   top: 0;
@@ -448,7 +374,6 @@ h6 {
   display: none;
 }
 
-/* Mobile Nav body classes */
 
 body.mobile-nav-active {
   overflow: hidden;
@@ -462,14 +387,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Intro Section
---------------------------------------------------------------*/
 
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/back.jpg) top center;
+  background: url(../img/background.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -516,7 +438,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-#intro h1 span {
+#intro h1 span h2 {
   color: #f82249;
 }
 
@@ -650,12 +572,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
+
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/background.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -693,107 +613,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   color: #fff;
 }
-
-/*--------------------------------------------------------------
-# Speakers Section
---------------------------------------------------------------*/
-
-#speakers {
-  padding: 60px 0 30px 0;
-}
-
-#speakers .speaker {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-#speakers .speaker .details {
-  background: rgba(6, 12, 34, 0.76);
-  position: absolute;
-  left: 0;
-  bottom: -30px;
-  right: 0;
-  text-align: center;
-  padding-top: 10px;
-  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-#speakers .speaker .details h3 {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-#speakers .speaker .details p {
-  color: #fff;
-  font-size: 15px;
-  margin-bottom: 10px;
-  font-style: italic;
-}
-
-#speakers .speaker .details .social {
-  height: 30px;
-}
-
-#speakers .speaker .details a {
-  color: #fff;
-}
-
-#speakers .speaker .details a:hover {
-  color: #f82249;
-}
-
-#speakers .speaker:hover .details {
-  bottom: 0;
-}
-
-#speakers-details {
-  padding: 60px 0;
-}
-
-#speakers-details .details h2 {
-  color: #112363;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-#speakers-details .details .social {
-  margin-bottom: 15px;
-}
-
-#speakers-details .details .social a {
-  background: #e9edfb;
-  color: #112363;
-  line-height: 1;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  padding-top: 9px;
-}
-
-#speakers-details .details .social a:hover {
-  background: #f82249;
-  color: #fff;
-}
-
-#speakers-details .details .social a i {
-  font-size: 18px;
-}
-
-#speakers-details .details p {
-  color: #112363;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-/*--------------------------------------------------------------
-# Schedule Section
---------------------------------------------------------------*/
 
 #schedule {
   padding: 60px 0 60px 0;
@@ -1143,11 +962,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-
-/*--------------------------------------------------------------
-# Venue Section
---------------------------------------------------------------*/
-
 #venue {
   padding: 60px 0;
 }
@@ -1163,7 +977,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #venue .venue-info {
-  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background: url("../img/gallery/6.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 60px;
@@ -1209,71 +1023,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
-/*--------------------------------------------------------------
-# Hotels Section
---------------------------------------------------------------*/
-
-#hotels {
-  padding: 60px 0;
-}
-
-#hotels .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
-  margin-bottom: 30px;
-}
-
-#hotels .hotel:hover .hotel-img img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#hotels .hotel-img {
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-#hotels .hotel-img img {
-  transition: 0.3s ease-in-out;
-}
-
-#hotels h3 {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 5px;
-  padding: 0 20px;
-}
-
-#hotels a {
-  color: #152b79;
-}
-
-#hotels a:hover {
-  color: #f82249;
-}
-
-#hotels .stars {
-  padding: 0 20px;
-  margin-bottom: 5px;
-}
-
-#hotels .stars i {
-  color: #ffc31d;
-}
-
-#hotels p {
-  padding: 0 20px;
-  margin-bottom: 20px;
-  color: #060c22;
-  font-style: italic;
-  font-size: 15px;
-}
-
-/*--------------------------------------------------------------
-# Gallery Section
---------------------------------------------------------------*/
-
+/* Gallery */
 #gallery {
   padding: 10px;
   overflow: hidden;
@@ -1311,6 +1061,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #gallery .gallery-carousel .owl-stage-outer {
   overflow: visible;
+  width: 400px;
+  height: 300px;
 }
 
 #gallery .gallery-carousel .center {
@@ -1318,14 +1070,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin:10;
   box-sizing: border-box;
   /* padding: 4px; */
+  width: 400px;
+  height: 300px;
   background: #fff;
-  z-index:10 ;
+  z-index:2 ;
 
 }
 
 #gallery .gallery-carousel img {
-  width: 570px;
-  height: 450px;
+  width: 400px;
+  height: 300px;
   object-fit: cover; /* Prevents distortion */
   /* margin:10px; */
 }
@@ -1333,8 +1087,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Tablet view (768px - 991px) */
 @media (max-width: 991px) {
   #gallery .gallery-carousel img {
-    width: 500px;
-    height: 350px;
+    width: 400px;
+    height: 300px;
   }
   #gallery .owl-item {
     margin-bottom: 20px;
@@ -1356,55 +1110,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(1.1); /* Increase size by 20% */
   transition: transform 0.3s ease-in-out; /* Smooth animation */
   border:4px solid black;
+  border-radius: 20px;
   opacity: 1;
   /* box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8); */
 }
 
-
-/*--------------------------------------------------------------
-# Sponsors Section
---------------------------------------------------------------*/
-
-#sponsors {
-  padding: 60px 0;
-}
-
-#sponsors .sponsors-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
-  margin-bottom: 30px;
-}
-
-#sponsors .sponsor-logo {
-  padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
-  height: 160px;
-}
-
-#sponsors .sponsor-logo:hover img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-#sponsors img {
-  transition: all 0.4s ease-in-out;
-}
-
-/*--------------------------------------------------------------
-# F.A.Q Section
---------------------------------------------------------------*/
 
 #faq {
   padding: 60px 0;

@@ -122,7 +122,7 @@ function toggleCards() {
 
 const arr = [
   {
-    img: "./event1.jpg",
+    img: "./event4.jpg",
     title: "Dandiya",
     date: "12/02/2025",
     time: "10:00 pm",
@@ -131,7 +131,7 @@ const arr = [
     id: 1,
   },
   {
-    img: "./event1.jpg",
+    img: "./background.jpg",
     title: "Dandiya",
     date: "12/02/2025",
     time: "10:00 pm",
