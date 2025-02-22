@@ -7,6 +7,7 @@
     <title>Payment Page</title>
   </head>
   <body>
+    <div class="pay-container"></div>
     <div class="pretext">
       <h2>Payment Mode</h2>
       <p>choose any of the 2 following mode</p>
@@ -24,12 +25,13 @@
     <div class="online">
       <h3>Online Mode</h3>
       <div class="info">
-        After choosing this mode, scan the provided QR code using your UPI app
+        <p>After choosing this mode, scan the provided QR code using your UPI app
         and pay the required amount. Once the payment is complete, you’ll
         receive a QR code via email. This QR code must be scanned at the event
-        venue to confirm your registration. <br />Additionally, you’ll need to
+        venue to confirm your registration.</p> 
+        <p>Additionally, you’ll need to
         upload a snapshot of the payment receipt from your UPI app, which
-        includes the transaction ID, as proof for verification.
+        includes the transaction ID, as proof for verification.</p>
       </div>
       <div class="qr-code"></div>
       <img src="QR_code.svg" alt="qrcode" />
@@ -47,6 +49,7 @@
         />
       </form>
       <button form="screen-shot" type="submit">Submit</button>
+
     </div>
   </body>
 </html>
