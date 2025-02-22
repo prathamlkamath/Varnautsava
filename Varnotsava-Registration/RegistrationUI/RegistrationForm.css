@@ -150,7 +150,7 @@ h3 {
     padding: 1rem;
   }
   .technical-events, .cultural-events, .management-events {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

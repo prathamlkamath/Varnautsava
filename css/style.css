@@ -104,6 +104,8 @@ h6 {
 
 #header #logo h1 {
   font-size: 36px;
+  width: 30px;
+  height: 70px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
@@ -851,6 +853,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     visibility: hidden; /* Hides text but keeps space */
     display: none;
   }
+
+  #day-1 .nav-tabs a{
+    margin: 8px;
+   }
+  
+   #day-2 .nav-tabs a{
+    margin:8px;
+  }
+
+  
+
 }
 /* not sure about this css  */
 #schedule-detail .schedule-item .small-view p {
@@ -1578,7 +1591,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 1024px) {
   #intro {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 
   #about {
@@ -1831,5 +1844,5 @@ body.mobile-nav-active #mobile-nav-toggle {
   .splash-tagline {
     font-size: 1.2em;
     margin-bottom:30px;
-    }
+  }
 }
