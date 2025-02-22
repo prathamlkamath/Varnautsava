@@ -10,8 +10,7 @@
     <div class="pay-container"></div>
     <div class="pretext">
       <h2>Payment Mode</h2>
-      <p>choose any of the 2 following mode</p>
-    </div>
+      </div>
     <div class="offline">
       <h3>Offline Mode</h3>
       <div class="info">
@@ -36,7 +35,7 @@
       <div class="qr-code"></div>
       <img src="QR_code.svg" alt="qrcode" />
       <p>
-        please upload the screenshot of the payment containing transaction id
+        Please upload the screenshot of the payment containing transaction id
       </p>
       <form action="" id="screen-shot">
         <label for="transaction-snap" class="file-label"> Upload Image </label>
@@ -47,8 +46,32 @@
           id="transaction-snap"
           class="file-input"
         />
+        <div id="image-preview"></div> <!-- Container for preview -->
       </form>
       <button form="screen-shot" type="submit">Submit</button>
+      
+      <script>
+        document.getElementById("transaction-snap").addEventListener("change", function (event) {
+          const file = event.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const previewContainer = document.getElementById("image-preview");
+              previewContainer.innerHTML = ""; // Clear previous preview
+              const img = document.createElement("img");
+              img.src = e.target.result;
+              img.alt = "Uploaded Preview";
+              img.style.maxWidth = "200px"; // Adjust as needed
+              img.style.marginTop = "10px";
+              img.style.border = "1px solid #ccc";
+              img.style.borderRadius = "5px";
+              previewContainer.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+      </script>
+      
 
     </div>
   </body>

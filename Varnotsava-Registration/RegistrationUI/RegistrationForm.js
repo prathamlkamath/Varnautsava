@@ -2,6 +2,8 @@ const technical_events = document.querySelector(".technical-events");
 const cultural_events = document.querySelector(".cultural-events");
 const technical = document.querySelector(".technical");
 const cultural = document.querySelector(".cultural");
+const management = document.querySelector(".management");
+const management_events = document.querySelector(".management-events")
 const form = document.querySelector("[data-multi-step]");
 let count = 0; // Tracks the number of selected cards
 
@@ -57,30 +59,31 @@ function createEventCard(
   const boldText = document.createElement("b");
   boldText.textContent = eventTitle;
   title.appendChild(boldText);
-
   const dtaeAndTime = document.createElement("div");
   dtaeAndTime.className = "date-time";
 
   const dtaeDiv = document.createElement("div");
   dtaeDiv.className = "date";
-  dtaeDiv.textContent = eventDate;
+  dtaeDiv.textContent = `Date: ${eventDate}` ;
+  details.appendChild(dtaeAndTime)
 
   const timeDiv = document.createElement("div");
   timeDiv.className = "time";
-  timeDiv.textContent = eventTime;
+  timeDiv.textContent = `Time: ${eventTime}`;
 
   dtaeAndTime.appendChild(dtaeDiv);
   dtaeAndTime.appendChild(timeDiv);
 
   const description = document.createElement("div");
-  description.className = "description";
-  description.textContent = eventDescription;
+  description.className = "time";
+  description.className="date";
+  // description.textContent = eventDescription;
 
   titleAndDate.appendChild(title);
-  titleAndDate.appendChild(dtaeAndTime);
+  // titleAndDate.appendChild(dtaeAndTime);
 
   details.appendChild(titleAndDate);
-  details.appendChild(description);
+  details.appendChild(dtaeAndTime);
 
   eventCard.appendChild(img);
   eventCard.appendChild(details);
@@ -90,12 +93,12 @@ function createEventCard(
       checkBox.checked = false;
       eventCard.classList.remove("checked");
       count--;
-    } else if (count < 5) {
+    } else {
       checkBox.checked = true;
       eventCard.classList.add("checked");
       count++;
     }
-    toggleCards();
+    // toggleCards();
     toggleProceedButton();
   });
 
@@ -106,128 +109,256 @@ function createEventCard(
     cultural.classList.add("active");
     cultural_events.appendChild(eventCard);
   }
+  else{
+    management.classList.add("active");
+    management_events.appendChild(eventCard);
+  }
 }
 
-function toggleCards() {
-  const allCards = document.querySelectorAll(".event-card");
-  allCards.forEach((card) => {
-    const checkBox = card.querySelector(".checkbox");
-    if (!checkBox.checked && count >= 5) {
-      card.classList.add("disabled");
-    } else {
-      card.classList.remove("disabled");
-    }
-  });
-}
+// function toggleCards() {
+//   const allCards = document.querySelectorAll(".event-card");
+//   allCards.forEach((card) => {
+//     const checkBox = card.querySelector(".checkbox");
+//     if (!checkBox.checked && count >= 5) {
+//       card.classList.add("disabled");
+//     } else {
+//       card.classList.remove("disabled");
+//     }
+//   });
+// }
 
 const arr = [
   {
-    img: "./event4.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
+    img: "./Events/algorithm.jpeg",
+    title: "ALGORITHM ROULETTE",
+    date: "20/03/2025",
+    time: "10:00 am",
     type: "technical",
-    id: 1,
+
   },
   {
-    img: "./background.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
+    img: "./Events/code.jpeg",
+    title: "CODE RESURRECT",
+    date: "20/03/2025",
+    time: "10:00 am",
     type: "technical",
-    id: 2,
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
+    img: "./Events/hunt.jpeg",
+    title: "HACK HUNT",
+    date: "20/03/2025",
+    time: "10:00 am",
     type: "technical",
-    id: 3,
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
+    img: "./Events/squid1.jpeg",
+    title: "SQUID HUNT",
+    date: "21/03/2025",
+    time: "10:00 am",
     type: "technical",
-    id: 4,
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
+    img: "./Events/lan.jpeg",
+    title: "LAN PARTY",
+    date: "21/03/2025",
+    time: "10:00 am",
     type: "technical",
-    id: 5,
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
+    img: "./Events/line.jpeg",
+    title: "FASTEST LINE FOLLOWER",
+    date: "20/03/2025",
+    time: "10:00 am",
     type: "technical",
-    id: 6,
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
-    type: "cultural",
-    id: 1,
+    img: "./Events/robo.jpeg",
+    title: "ROBO SOCCER",
+    date: "21/03/2025",
+    time: "10:00 am",
+    type: "technical",
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
-    type: "cultural",
-    id: 2,
+    img: "./Events/plane.jpeg",
+    title: "WRIGHT BROTHERS",
+    date: "21/03/2025",
+    time: "10:00 am",
+    type: "technical",
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
-    type: "cultural",
-    id: 3,
+    img: "./Events/elect.jpeg",
+    title: "ELECTRO DETECTIVES",
+    date: "20/03/2025",
+    time: "10:00 am",
+    type: "technical",
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
-    type: "cultural",
-    id: 4,
+    img: "./Events/route.jpeg",
+    title: "ROUTE RUSH",
+    date: "21/03/2025",
+    time: "10:00 am",
+    type: "technical",
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
+    img: "./Events/1.jpeg",
+    title: "SHRITHI SAMRAT",
+    date: "20/03/2025",
+    time: "10:00 am",
     type: "cultural",
-    id: 5,
+
   },
   {
-    img: "./event1.jpg",
-    title: "Dandiya",
-    date: "12/02/2025",
-    time: "10:00 pm",
-    description: "This is a dandiya night program",
+    img: "./Events/2.png",
+    title: "RAAG RUMBLE",
+    date: "20/03/2025",
+    time: "11:00 am",
     type: "cultural",
-    id: 6,
+
+  },
+  {
+    img: "./Events/3.jpeg",
+    title: "THANDAV TAAL",
+    date: "21/03/2025",
+    time: "9:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/4.jpeg",
+    title: "GROOVE GALA",
+    date: "21/03/2025",
+    time: "10:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/5.jpeg",
+    title: "SPEECH OF SMILES",
+    date: "20/03/2025",
+    time: "10:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/6.jpeg",
+    title: "SILENT SYMPHONY",
+    date: "21/03/2025",
+    time: "12:00 pm",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/7.jpeg",
+    title: "WHO AM I?",
+    date: "21/03/2025",
+    time: "10:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/8.jpeg",
+    title: "AAKRITHI",
+    date: "21/03/2025",
+    time: "11:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/9.jpeg",
+    title: "NATURE'S PALETTE",
+    date: "21/03/2025",
+    time: "9:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/10.jpeg",
+    title: "HASTHAKALA",
+    date: "21/03/2025",
+    time: "1:00 pm",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/11.jpeg",
+    title: "MELODY CHAIN",
+    date: "20/03/2025",
+    time: "11:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/12.jpeg",
+    title: "REEL-O-MANIA",
+    date: "20/03/2025 and 21/03/2025",
+    time: "9:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/13.jpeg",
+    title: "FOCUS TO PRIZE",
+    date: "20/03/2025 and 21/03/2025",
+    time: "9:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/14.jpeg",
+    title: "KALA SANGAMA",
+    date: "21/03/2025",
+    time: "1:15 pm",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/15.jpeg",
+    title: "SHADES N STROKES",
+    date: "21/03/2025",
+    time: "12:00 pm",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/16.jpeg",
+    title: "EXPRESSION SPEAKS",
+    date: "21/03/2025",
+    time: "11:00 am",
+    type: "cultural",
+
+  },
+  {
+    img: "./Events/17.jpeg",
+    title: "STRATEGIC STOXX",
+    date: "20/03/2025",
+    time: "10:00 am",
+    type: "business",
+
+  },
+  {
+    img: "./Events/18.jpeg",
+    title: "VISIONARY VENTURES",
+    date: "20/03/2025",
+    time: "10:00 am",
+    type: "business",
+
+  },
+  {
+    img: "./Events/19.jpeg",
+    title: "THE ULTIMATE BIZ TEAM",
+    date: "20/03/2025",
+    time: "10:00 am",
+    type: "business",
+
   },
 ];
 

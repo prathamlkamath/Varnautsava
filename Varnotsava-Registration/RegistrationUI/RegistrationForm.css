@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(bg2.jpg) no-repeat center center/cover ;
+  /* background: url(ba.jpg) no-repeat center center/cover ; */
   background-attachment: fixed;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -28,11 +28,11 @@ form {
   display: none;
   flex-direction: column;
   gap: 1.5rem;
-  background-color: #000000d4;
+  /* background-color: #000000d4; */
   border-radius: 1rem;
   padding: 2rem;
   width: 31.25rem; /* 500px approx */
-  box-shadow: 0 4px 10px rgba(215, 207, 207, 0.15);
+  box-shadow: 0 4px 10px rgba(253, 253, 253, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -44,7 +44,7 @@ form {
 .form-card > h3 {
   text-align: center;
   font-size: 1.5rem;
-  color: #a5e0eb;
+  color: #151515;
   margin-bottom: 1rem;
   word-wrap: break-word;
 }
@@ -58,12 +58,12 @@ form {
 
 .form-group > label {
   font-weight: 600;
-  color: #c8deeb;
+  color: #000000;
   font-size: 0.9rem;
 }
 
 .form-group > input {
-  border: 1px solid #87d7e7;
+  border: 1px solid #000000;
   border-radius: 0.5rem;
   font-size: 0.9rem;
   padding: 0.75rem;
@@ -134,14 +134,14 @@ form {
 .event-selection > h3 {
   align-self: flex-start;
   margin: 2rem;
-  color: #f5f5f5;
+  color: #ffffff;
   font-size:larger;
   padding: 30px;
 }
 .event-selection > h2 {
   align-self: flex-start;
   margin: 2rem;
-  color: #f5f5f5;
+  color: #ffffff;
 
 }
 
@@ -154,7 +154,7 @@ form {
   margin-left: 20px;
   margin-top: 20px;
   padding: 30px;
-  color: #c8deeb;
+  color: #ffffff;
   /* background-color: #0a2b4ab6; */
 }
 
@@ -172,7 +172,8 @@ form {
 }
 
 .technical,
-.cultural {
+.cultural,
+.management {
   display: none;
   flex-direction: column;
   gap: 2rem;
@@ -182,33 +183,38 @@ form {
 }
 
 .technical h3,
-.cultural h3{
+.cultural h3,
+.management h3{
   font-size: 30px;
 }
 
 .technical.active,
-.cultural.active {
+.cultural.active,
+.management.active {
   display: flex;
 }
 
 .technical-events,
-.cultural-events {
+.cultural-events,
+.management-events {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
   width: 100%;
   gap: 2.5rem;
 }
 
 @media (max-width: 1024px) {
   .technical-events,
-  .cultural-events {
-    grid-template-columns: 1fr 1fr 1fr;
+  .cultural-events,
+  .management-events {
+    grid-template-columns: 1fr 1fr ;
   }
 }
 
 @media (max-width: 768px) {
   .technical-events,
-  .cultural-events {
+  .cultural-events,
+  .management-events {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -245,7 +251,8 @@ form {
 
 @media (max-width: 480px) {
   .technical-events,
-  .cultural-events {
+  .cultural-events,
+  .management-events {
     grid-template-columns: 1fr;
   }
 
@@ -289,6 +296,7 @@ form {
     /* background-color: #0b273d; */
     background-color: #041021ea;
   border: 2px solid #9d9505;
+  
 }
 
 .event-card:hover {
@@ -316,7 +324,7 @@ form {
   flex-direction: column;
   gap: 0.5 rem;
   justify-content: flex-start;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .details {
@@ -341,7 +349,7 @@ form {
 }
 
 .event-card.checked {
-  border: 0.30rem solid #d8dbde;
+  border: 0.30rem solid #3992eb;
 }
 
 .material-symbols-outlined {
